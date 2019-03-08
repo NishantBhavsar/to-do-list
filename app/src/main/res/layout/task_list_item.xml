@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:id="@+id/tasklist_container"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+    android:layout_marginVertical="@dimen/activity_vertical_margin">
+
+    <CheckBox
+        android:id="@+id/status_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/show_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="5dp"
+            android:textColor="@android:color/black"
+            android:focusable="false"
+            android:clickable="false"
+            android:textSize="16dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/show_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:textColor="@android:color/holo_red_light"
+                android:focusable="false"
+                android:clickable="false"
+                android:textSize="12dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/show_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textColor="@android:color/holo_red_light"
+                android:focusable="false"
+                android:clickable="false"
+                android:textSize="12dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/category_view"
+                android:layout_width="wrap_content"
+                android:layout_weight="0"
+                android:layout_gravity="end"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="end"
+                android:textColor="#000000"
+                android:textAlignment="viewEnd"
+                android:textSize="12dp"
+                android:layout_height="wrap_content"
+                android:background="#E0E0E0"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

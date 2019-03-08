@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/all_lists">
+        <item
+            android:orderInCategory="0"
+            android:checked="true"
+            android:icon="@drawable/ic_all_24dp"
+            android:title="To Do Lists" /></group>
+    <group>
+        <item
+            android:orderInCategory="0"
+            android:icon="@drawable/ic_today_24dp"
+            android:title="Today" />
+        <item
+            android:orderInCategory="0"
+            android:icon="@drawable/ic_check_black_24dp"
+            android:title="Completed" />
+        <item
+            android:orderInCategory="0"
+            android:icon="@drawable/ic_uncomplete_24dp"
+            android:title="UnComplete" />
+        <item
+            android:orderInCategory="0"
+            android:icon="@drawable/ic_category_outline_24dp"
+            android:title="Uncategorized" />
+    </group>
+
+    <item
+        android:id="@+id/lists_item_container"
+        android:title="Categories">
+        <menu>
+            <group android:id="@+id/lists_group">
+
+
+            </group>
+            <item
+                android:orderInCategory="2"
+                android:icon="@drawable/ic_add_24dp_black"
+                android:title="Create new Category" />
+        </menu>
+    </item>
+<!--
+    <group
+        android:id="@+id/extra">
+        <item
+            android:orderInCategory="3"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings" />
+    </group>
+-->
+</menu>
